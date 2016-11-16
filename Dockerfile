@@ -1,5 +1,5 @@
 FROM node:6.9.0
-EXPOSE 3000
+EXPOSE 8081
 CMD ["npm","start"]
 RUN mkdir /var/wwwroot
 WORKDIR /var/wwwroot
