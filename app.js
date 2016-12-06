@@ -45,6 +45,7 @@ hbs.registerHelper('ifvalue', function (conditional, options) {
 /**
  * Express configuration.
  */
+console.log('---> using port ' + config.server.port);
 app.set('port', config.server.port);
 app.engine('hbs', hbs.express3());
 app.set('views', path.join(__dirname, 'views'));

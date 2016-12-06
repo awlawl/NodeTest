@@ -1,7 +1,7 @@
 var config = {
   development: {
     server: {
-      port: 8081,
+      port: process.env.NODE_PORT || 80,
     },
     database: {
       url: 'mongodb://localhost/nodetest_dev'
@@ -9,7 +9,7 @@ var config = {
   },
   testing: {
     server: {
-      port: 8081
+      port: 3000
     },
     database: {
       url: 'mongodb://localhost/nodetest_test'
@@ -17,7 +17,7 @@ var config = {
   },
   production: {
     server: {
-      port: 8081
+      port: 3000 
     },
     database: {
       url: 'mongodb://localhost/nodetest'

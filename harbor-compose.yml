@@ -1,0 +1,13 @@
+shipments:
+  mss-awl-helloworld-web:
+    env: dev
+    barge: corp-sandbox
+    containers:
+    - web-app
+    replicas: 1
+    group: mss
+    property: turner
+    project: test
+    product: test
+    environment: {}
+
